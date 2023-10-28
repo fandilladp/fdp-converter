@@ -1,44 +1,43 @@
 # FDP Converter
 
-FDP Converter adalah alat yang memungkinkan Anda mengonversi file JSON ke format file sesuai yang anda inginkan yang dilengkapi enkripsi. Ini memberikan lapisan keamanan tambahan untuk data Anda saat membagikannya atau menyimpannya.
+FDP Converter is a tool that enables you to convert JSON files into your desired file format equipped with encryption. It adds an extra layer of security to your data when sharing or storing it.
 
 <img src="./assets/logo.png" alt="FDP Converter Logo" width="200"/>
 
+## 🌟 Features
 
-## 🌟 Fitur
+- **Quick Conversion**: Transform your JSON files into FDP format in just a few seconds.
+- **High Security**: Your JSON file will be encrypted before conversion.
+- **Customization**: You can tailor the output file name as per your requirements.
 
-- **Konversi Cepat**: Ubah file JSON Anda ke format FDP hanya dalam beberapa detik.
-- **Keamanan Tinggi**: File JSON Anda akan dienkripsi sebelum dikonversi.
-- **Kustomisasi**: Anda dapat menyesuaikan nama file output sesuai kebutuhan Anda.
+## 📋 Prerequisites
 
-## 📋 Prasyarat
+Before using FDP Converter, ensure you have:
 
-Sebelum menggunakan FDP Converter, pastikan Anda memiliki:
+- A `.json` format file.
+- Node.js and NPM installed on your system.
 
-- File dengan format `.json`.
-- Node.js dan NPM terinstal pada sistem Anda.
+## 🚀 How to Use
 
-## 🚀 Cara Menggunakan
+1. Clone this repository or download the source code.
+2. Run `npm install` to install all required dependencies.
+3. Start the server by running `node app.js`.
+4. Open your browser and navigate to `http://localhost:1212/uploadform` to access the upload form.
+5. Upload your JSON file and wait until the conversion is complete.
+6. The FDP file will be saved with the default name `output.fdp`, but you can customize it according to your needs in the code.
 
-1. Clone repositori ini atau unduh kode sumber.
-2. Jalankan `npm install` untuk menginstal semua dependensi yang diperlukan.
-3. Mulai server dengan menjalankan `node app.js`.
-4. Buka browser Anda dan kunjungi `http://localhost:1212/uploadform` untuk mengakses form upload.
-5. Unggah file JSON Anda dan tunggu hingga konversi selesai.
-6. File FDP akan disimpan dengan nama default `output.fdp`, namun Anda dapat mengkustomisasinya sesuai kebutuhan Anda dalam kode.
+## 🛠️ Customizing File Name
 
-## 🛠️ Kustomisasi Nama File
+If you wish to customize the output file name:
 
-Jika Anda ingin mengkustomisasi nama file output:
+- Open `app.js`.
+- Locate the line `fs.writeFileSync('output.fdp', encryptedData);`.
+- Replace `'output.fdp'` with your desired file name.
 
-- Buka `app.js`.
-- Cari baris `fs.writeFileSync('output.fdp', encryptedData);`.
-- Gantilah `'output.fdp'` dengan nama file yang Anda inginkan.
+## 📄 License
 
-## 📄 Lisensi
-
-Distribusi di bawah lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanjut.
+Distributed under the MIT license. See `LICENSE` for more information.
 
 ---
 
-Harap sesuaikan konten di atas sesuai dengan kebutuhan dan preferensi Anda, terutama bagian seperti lokasi logo atau informasi lisensi jika berbeda. Pastikan juga untuk menyediakan informasi tambahan yang mungkin Anda anggap penting bagi developer lain.
+Please adjust the content as per your needs and preferences, especially parts like the logo location or license information if they differ. Also, ensure to provide any additional information that you deem essential for other developers.
