@@ -5,7 +5,7 @@ const fs = require('fs');
 
 const app = express();
 const port = 1212;
-const secretKey = 'pertaminapge@2023';
+const secretKey = 'YOUR_SECRET_KEY_HERE';
 const hashedSecret = crypto.createHash('sha256').update(secretKey).digest();  // Hash the secretKey
 const algorithm = 'aes-256-cbc';
 const storage = multer.memoryStorage();
